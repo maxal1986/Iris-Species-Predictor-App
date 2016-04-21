@@ -1,5 +1,4 @@
 library(shiny)
-library(caret)
 
 #We load the Random Forest Model that we created
 load("rf_model.rda")

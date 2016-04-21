@@ -10,7 +10,6 @@ The app uses the following packages and the Iris dataset included in R by defaul
 
 ```{r, eval = FALSE}
 library(shiny)
-library(caret)
 
 data(iris)
 ```
