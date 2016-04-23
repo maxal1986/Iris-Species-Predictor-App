@@ -5,12 +5,14 @@ date: "Thursday, April 21, 2016"
 output: html_document
 ---
 
-The following app on Shiny <http://rmarkdown.rstudio.com> is a very simple app that helps to predict the Species of an Iris flower according to the dimension of its Sepal and its Petal.
+The following app on Shiny <https://maxal1986.shinyapps.io/Iris_app/> is a very simple app that helps to predict the Species of an Iris flower according to the dimension of its Sepal and its Petal.
 
 The app uses the following packages and the Iris dataset included in R by default:
 
 ```{r, eval = FALSE}
 library(shiny)
+library(caret)
+library(randomForest)
 
 data(iris)
 ```

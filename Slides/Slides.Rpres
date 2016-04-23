@@ -8,13 +8,15 @@ Objective
 
 Let me introduce you the **Iris Species Predictor App**:
 
-- Shiny Server Link: (poner link Shiny)
+- [Shinyapps Link] (https://maxal1986.shinyapps.io/Iris_app/)
 - [GitHub Link] (https://github.com/maxal1986/Iris-Species-Predictor-App)
 
 This app uses the following libraries and datasets:
 
 ```{r, eval = FALSE}
 library(shiny)
+library(caret)
+library(randomForest)
 
 data(iris)
 ```
