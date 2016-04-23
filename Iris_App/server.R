@@ -1,10 +1,14 @@
 library(shiny)
+library(caret)
+library(randomForest)
+
 
 #We load the Random Forest Model that we created
-load("rf_model.rda")
+model <- load("data/rf_model.rda")
 
 # Define server logic for predicting the Iris Species
 shinyServer(function(input, output) {
+        
         output$text1 <- renderText({
                 
                 # We create an empty data set
@@ -15,7 +19,7 @@ shinyServer(function(input, output) {
                 Species = "")
                 
                 # We predict the species using the RF Model
-                result <- predict(modFit, prediction)
+                result <- predict(get(model), prediction)
                 
                 # We display the result
                 paste("It's a ", result)
